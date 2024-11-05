@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <h1>Guest Reservation</h1>
+        <fieldset>
+            <legend>General information</legend> 
+            <label for="txt">Arrival date:</label>
+            <input type="text" name="txt" value="" size="20" maxlength="30"><br>
+            <label for="Nights">Nights:</label>
+            <input type="text" name="Nights" value="" size="20" maxlength="30"><br>
+            <label for="Adults">Adults:</label>
+            <select name="Adults">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option selected value="1">1</option>
+            </select><br>
+            <label for="Children">Children:</label>
+            <select name="Children">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option selected value="0">0</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Preferences</legend>
+            Room type:
+            <input type="radio" name="room" value="Standart" checked>Standart 
+            <input type="radio" name="room" value="Business">Business
+            <input type="radio" name="room" value="Suite">Suite <br> 
+            Bed type:
+            <input type="radio" name="bed" value="King" checked>King 
+            <input type="radio" name="bed" value="Double">Double Double <br>
+            <input type="radio" name="bed" value="Smoking">Smoking 
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="ten">Name:</label>
+            <input type="text" name=ten value="" size="20" maxlength="30"><br>
+            <label for="mail">Email:</label>
+            <input type="email" name="mail" value="" size="20" maxlength="30"><br>
+            <label for="phone">Phone:</label>
+            <input type="number" name="phone" value="" size="20" maxlength="30" >
+        </fieldset>
+        <input type="submit" name="send" value="Submit Reservation">
+    </body>
+</html>
