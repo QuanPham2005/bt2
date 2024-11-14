@@ -61,7 +61,6 @@ body {
     display: flex;
     font-size: 16px;
     background-color: var(--very-pale-blue);
-    margin: 20px auto;
     padding: 25px;
     border: 30px;
     border-radius: 15px;
@@ -83,22 +82,43 @@ button {
     width: 100%;
 }
 .cancel-button {
+    padding: 1rem 0;
+    color: black;
     border: none;
-    background-color: white;
-    margin-top: 15px;
+    background: white;
 }
 .cancel-button:hover {
     color: black;
 }
 .proceed-button {
-    background-color: var(--bright-blue);
     padding: 1rem 0;
-    color: white;
+    color: black;
+    border: none;
+    background: white;
+}
+.proceed-button:hover {
+    background-color: var(--bright-blue);
     box-shadow: 0 20px 30px -8px rgb(197 189 245);
     border-radius: 15px;
-    border: none;
+    color: white;
 }
-
-.proceed-button:hover {
+.proceed-button:active{
     background-color: var(--bright-blue-hover);
+    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+    border-radius: 15px;
+    transform: translateY(4px);
+    cursor : pointer;
+}
+.cancel-button:hover {
+    background-color: var(--bright-blue);
+    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+    border-radius: 15px;
+    color: white;
+}
+.cancel-button:active{
+    background-color: var(--bright-blue-hover);
+    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+    border-radius: 15px;
+    transform: translateY(4px);
+    cursor : pointer;
 }
