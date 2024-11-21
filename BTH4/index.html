@@ -1,19 +1,26 @@
 <html>
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Travel</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            <nav>
-                <h1 class="logo">Travel</h1>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">READ ME</a></li>
-                    <li><a href="#">TAKE ACTION</a></li>
+            <nav class="navbar">
+                <div class="logo">Travel</div>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-link">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#news">NEWS</a></li>
+                    <li><a href="#read-me">READ ME</a></li>
+                    <li><a class="k" href="#take-action">TAKE ACTION</a></li>
                 </ul>
             </nav>
             <div class="text">
@@ -23,21 +30,21 @@
             </div>
         </header>
         <div class="t1">
-            <h1 class="title">We coserve land through outreach, restoration, and research.</h1>
-            <p class="description">Some of the Earth's greatest landscapes are threatend by increased road construction. oil and gas exploration. We aim to protect these areas from inappropriate development, but we cannot achieve our goals alone. Find out how you can help.</p>
+            <h1 class="title2">We coserve land through outreach, restoration, and research.</h1>
+            <p class="list">Some of the Earth's greatest landscapes are threatend by increased road construction. oil and gas exploration. We aim to protect these areas from inappropriate development, but we cannot achieve our goals alone. Find out how you can help.</p>
         </div>
-        <div class="container">
-            <div class="card">
+        <main class="container">
+            <section id="about" class="card">
                 <img class="card-avatar" src="./images/body-image-1.jpg" alt="bridge">
-                <h1 class="card-title">ABOUT</h1>
-                <p class="card-text">Find out about our organization, mission, our nethods, and the results of our decades of advocary.</p>
+                <h1>ABOUT</h1>
+                <p>Find out about our organization, mission, our nethods, and the results of our decades of advocary.</p>
+            </section>
+            <section id="take-action" class="card">
+                <img src="./images/body-image-2.jpg" alt="Jungle">
+                <h1>TAKE ACTION</h1>
+                <p>Ready to take the next step? You can become a contributor to our cause, or participate yourself.</p>
             </div>
-            <div class="card">
-                <img class="card-avatar" src="./images/body-image-2.jpg" alt="Jungle">
-                <h1 class="card-title">TAKE ACTION</h1>
-                <p class="card-text">Ready to take the next step? You can become a contributor to our cause, or participate yourself.</p>
-            </div>
-        </div>
+        </main>
         <footer>
             <p>
                 EARTH, SOMEWHERE 105
