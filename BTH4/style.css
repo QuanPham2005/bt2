@@ -176,9 +176,15 @@ header {
 }
 footer {
     text-align: center;
-    background-color: rgb(32, 26, 26);
+    background-color: rgb(23, 20, 20);
     color: #fff;
-    padding: 1em 0;
+    padding: 2.5em 0;
+}
+footer h4 {
+    margin-bottom: 1.5rem;
+}
+footer p {
+    color: #5e6164;
 }
 @media (max-width: 768px) {
     .card {
